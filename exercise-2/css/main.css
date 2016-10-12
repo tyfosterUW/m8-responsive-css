@@ -4,3 +4,36 @@
 
 
 /* Assign styles here */
+
+.flexbox-container {
+    min-height: 200px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    padding: 20px;
+    flex-basis: 100%;
+}
+
+.content {
+    background-color: tomato;
+    text-align: center;
+    font-size: 4rem;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .flex-column {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-column {
+        flex-basis: 25%;
+    }
+}
